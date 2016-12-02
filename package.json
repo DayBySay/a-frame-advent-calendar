@@ -4,7 +4,8 @@
   "description": "A-Frame Advent Calendar 1日目 ======",
   "main": "index.js",
   "scripts": {
-	  "build": "./node_modules/.bin/browserify src/js/require.js -o public_html/js/bundle.js && node_modules/.bin/minify public_html/js/bundle.js"
+    "build": "./node_modules/.bin/browserify src/js/require.js -o public_html/js/bundle.js && node_modules/.bin/minify public_html/js/bundle.js",
+	"start": "./node_modules/.bin/http-server public_html/ -p 8080"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,7 @@
     "aframe": "^0.3.2",
     "aframe-html-shader": "^0.1.1",
     "browserify": "^13.1.1",
+    "http-server": "^0.9.0",
     "minify": "^2.0.13"
   }
 }
