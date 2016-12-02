@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A-Frame Advent Calendar 1日目 ======",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+	  "build": "./node_modules/.bin/browserify src/js/require.js -o public_html/js/bundle.js && node_modules/.bin/minify public_html/js/bundle.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DayBySay/a-frame-advent-calendar.git"
@@ -16,6 +18,8 @@
   "homepage": "https://github.com/DayBySay/a-frame-advent-calendar#readme",
   "devDependencies": {
     "aframe": "^0.3.2",
-    "aframe-html-shader": "^0.1.1"
+    "aframe-html-shader": "^0.1.1",
+    "browserify": "^13.1.1",
+    "minify": "^2.0.13"
   }
 }
